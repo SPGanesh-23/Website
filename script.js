@@ -1,28 +1,87 @@
-// Maasaathuvaan Clone Interactivity
+/**
+ * Maasaathuvaan Website Logic
+ * Handles Mobile Menu, Animations, and Header State
+ */
 
 document.addEventListener('DOMContentLoaded', () => {
-    // 1. Mobile Menu Toggle
+    initMobileMenu();
+    initScrollAnimations();
+    initHeaderScroll();
+});
+
+/* 1. Mobile & Navigation Logic */
+function initMobileMenu() {
     const mobileToggle = document.querySelector('.mobile-toggle');
-    // Note: In a real implementation, we'd toggle a visible class on a mobile nav menu
-    // For this prototype, we'll log it
-    if (mobileToggle) {
-        mobileToggle.addEventListener('click', () => {
-            alert('Mobile menu clicked - (Nav toggle implementation would go here)');
-        });
+    const closeNav = document.querySelector('.close-nav');
+    const overlay = document.querySelector('.mobile-nav-overlay');
+    const links = document.querySelectorAll('.mobile-links a');
+
+    if (!mobileToggle || !overlay) return;
+
+    // Toggle Menu
+    function toggleMenu(isOpen) {
+        if (isOpen) {
+            overlay.classList.add('active');
+            document.body.style.overflow = 'hidden'; // Prevent scrolling
+        } else {
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+        }
     }
 
-    // 2. Smooth Scroll for Anchor Links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                target.scrollIntoView({
-                    behavior: 'smooth'
-                });
-            }
-        });
+    mobileToggle.addEventListener('click', () => toggleMenu(true));
+    closeNav.addEventListener('click', () => toggleMenu(false));
+
+    // Close on click outside (overlay background)
+    overlay.addEventListener('click', (e) => {
+        if (e.target === overlay) toggleMenu(false);
     });
 
-    console.log("Maasaathuvaan Clone Loaded Successfully");
-});
+    // Close on link click
+    links.forEach(link => {
+        link.addEventListener('click', () => toggleMenu(false));
+    });
+}
+
+/* 2. Scroll Animations (IntersectionObserver) */
+function initScrollAnimations() {
+    const animatedElements = document.querySelectorAll('[data-animate]');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('in-view');
+                observer.unobserve(entry.target); // Run once
+            }
+        });
+    }, {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px' // Trigger slightly before element is fully in view
+    });
+
+    animatedElements.forEach(el => observer.observe(el));
+
+    // Stagger logic for specific containers
+    document.querySelectorAll('[data-stagger-load]').forEach(container => {
+        // We can use CSS nth-child delay, but JS observer is cleaner for parents
+        const children = container.children;
+        Array.from(children).forEach((child, index) => {
+            child.style.transitionDelay = `${index * 0.1}s`;
+            child.setAttribute('data-animate', 'fade-up');
+            observer.observe(child);
+        });
+    });
+}
+
+/* 3. Header Scroll Effect */
+function initHeaderScroll() {
+    const header = document.querySelector('header');
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    });
+}

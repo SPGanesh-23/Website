@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Master the Markets with Maasaathuvaan. NISM Certified Trading Education in Forex, Stocks, and Options.">
     <title>MAASAATHUVAAN | Master the Markets</title>
     <link rel="stylesheet" href="style.css">
 
@@ -21,76 +23,101 @@
 <body>
 
     <!-- Sticky WhatsApp -->
-    <a href="#" class="floating-whatsapp" aria-label="Chat on WhatsApp">
+    <a href="https://wa.me/917845976767" target="_blank" class="floating-whatsapp" aria-label="Chat on WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
 
     <!-- Navbar -->
-    <header>
-        <div class="logo">
-            <img src="assets/logo-placeholder.png" alt="" style="display:none;"> <!-- Placeholder if needed -->
-            <span>MAASAATHUVAAN</span>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Founder</a></li>
-                <li><a href="#">Courses <i class="fas fa-chevron-down"></i></a></li>
-                <li><a href="#">Our Approach</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="header-actions">
-            <button class="btn-primary">Book Free Orientation</button>
-            <div class="mobile-toggle"><i class="fas fa-bars"></i></div>
+    <header id="header">
+        <div class="container header-container">
+            <div class="logo">
+                <!-- <img src="assets/logo-placeholder.png" alt="Maasaathuvaan Logo" style="display:none;"> -->
+                <a href="#home"><span>MAASAATHUVAAN</span></a>
+            </div>
+
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#courses">Courses <i class="fas fa-chevron-down"></i></a></li>
+                    <li><a href="#approach">Our Approach</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="#contact" class="btn-primary">Book Free Orientation</a>
+                <button class="mobile-toggle" aria-label="Toggle Navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
         </div>
     </header>
 
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-nav-overlay">
+        <div class="mobile-nav-content">
+            <button class="close-nav" aria-label="Close Navigation"><i class="fas fa-times"></i></button>
+            <ul class="mobile-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#approach">Our Approach</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
     <main>
         <!-- Hero Section -->
-        <section class="hero">
+        <section id="home" class="hero">
             <div class="container hero-container">
-                <div class="badges-row">
-                    <span class="badge-outline"><i class="fas fa-ribbon"></i> NISM Certified</span>
-                    <span class="badge-outline"><i class="fas fa-chart-line"></i> 5+ Years Trading</span>
-                    <span class="badge-outline"><i class="fas fa-shield-alt"></i> 8+ Years Corporate</span>
-                </div>
-
-                <h1>
-                    Master the Markets with <br>
-                    <span class="highlight">Psychological</span> Trading <br>
-                    Education
-                </h1>
-
-                <p class="hero-desc">
-                    At MAASAATHUVAAN, we believe structured education transforms beginners into confident traders. Our
-                    comprehensive curriculum covering Forex, Stocks, and Options emphasizes discipline, risk management,
-                    and trading psychology through NISM-certified professional guidance.
-                </p>
-
-                <div class="cta-row">
-                    <button class="btn-primary-large">Book Free Orientation <i class="fas fa-arrow-right"></i></button>
-                    <button class="btn-secondary-large">Explore Courses</button>
-                </div>
-
-                <div class="stats-row">
-                    <div class="stat-item">
-                        <h3>8+</h3>
-                        <p>Years Corporate Experience</p>
+                <div class="hero-content" data-animate="fade-up">
+                    <div class="badges-row">
+                        <span class="badge-outline"><i class="fas fa-ribbon"></i> NISM Certified</span>
+                        <span class="badge-outline"><i class="fas fa-chart-line"></i> 5+ Years Trading</span>
+                        <span class="badge-outline"><i class="fas fa-shield-alt"></i> 8+ Years Corporate</span>
                     </div>
-                    <div class="stat-item">
-                        <h3>5+</h3>
-                        <p>Years Trading Markets</p>
+
+                    <h1>
+                        Master the Markets with <br>
+                        <span class="highlight">Psychological</span> Trading <br>
+                        Education
+                    </h1>
+
+                    <p class="hero-desc">
+                        At MAASAATHUVAAN, we believe structured education transforms beginners into confident traders.
+                        Our
+                        comprehensive curriculum covering Forex, Stocks, and Options emphasizes discipline, risk
+                        management,
+                        and trading psychology through NISM-certified professional guidance.
+                    </p>
+
+                    <div class="cta-row">
+                        <a href="#contact" class="btn-primary-large">Book Free Orientation <i
+                                class="fas fa-arrow-right"></i></a>
+                        <a href="#courses" class="btn-secondary-large">Explore Courses</a>
                     </div>
-                    <div class="stat-item">
-                        <h3>100%</h3>
-                        <p>Practical Education Focus</p>
+
+                    <div class="stats-row">
+                        <div class="stat-item">
+                            <h3>8+</h3>
+                            <p>Years Corporate Experience</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>5+</h3>
+                            <p>Years Trading Markets</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>100%</h3>
+                            <p>Practical Education Focus</p>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Decorative background elements would go here in CSS -->
+            <!-- Background Elements -->
+            <div class="hero-bg-glow"></div>
         </section>
 
         <!-- Contact Strip -->
@@ -99,14 +126,15 @@
                 <div class="contact-item"><i class="fas fa-phone-alt"></i> +91 78459 76767</div>
                 <div class="contact-item"><i class="fas fa-envelope"></i> karthik@maasaathuvaan.in</div>
                 <div class="contact-item"><i class="fas fa-map-marker-alt"></i> Coimbatore, Tamil Nadu</div>
-                <a href="#" class="btn-whatsapp-small"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
+                <a href="https://wa.me/917845976767" target="_blank" class="btn-whatsapp-small"><i
+                        class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
             </div>
         </div>
 
         <!-- Courses Section -->
-        <section class="section-padding bg-dark">
+        <section id="courses" class="section-padding bg-dark">
             <div class="container">
-                <div class="section-header center">
+                <div class="section-header center" data-animate="fade-up">
                     <span class="pill-label">Our Programs</span>
                     <h2>Comprehensive <span class="text-gold">Trading Courses</span></h2>
                     <p class="section-sub">Structured curriculum designed to take you from beginner to confident trader.
@@ -115,65 +143,72 @@
 
                 <div class="grid-3">
                     <!-- Course 1 -->
-                    <div class="course-card">
-                        <h3>Forex Trading Course</h3>
-                        <p class="course-desc">Master the world's largest financial market. Learn currency pairs,
-                            technical analysis, and risk management.</p>
-                        <ul class="course-features">
-                            <li><i class="fas fa-circle"></i> Currency pairs & sessions</li>
-                            <li><i class="fas fa-circle"></i> MT4/MT5 & TradingView</li>
-                            <li><i class="fas fa-circle"></i> Technical & fundamental analysis</li>
-                            <li><i class="fas fa-circle"></i> Risk management strategies</li>
-                        </ul>
-                        <a href="#" class="link-arrow">Learn More <i class="fas fa-arrow-right"></i></a>
+                    <div class="course-card" data-animate="fade-up">
+                        <div class="card-content">
+                            <h3>Forex Trading Course</h3>
+                            <p class="course-desc">Master the world's largest financial market. Learn currency pairs,
+                                technical analysis, and risk management.</p>
+                            <ul class="course-features">
+                                <li><i class="fas fa-check-circle"></i> Currency pairs & sessions</li>
+                                <li><i class="fas fa-check-circle"></i> MT4/MT5 & TradingView</li>
+                                <li><i class="fas fa-check-circle"></i> Technical & fundamental analysis</li>
+                                <li><i class="fas fa-check-circle"></i> Risk management strategies</li>
+                            </ul>
+                        </div>
+                        <a href="#contact" class="link-arrow">Learn More <i class="fas fa-arrow-right"></i></a>
                     </div>
 
                     <!-- Course 2 -->
-                    <div class="course-card">
-                        <h3>Stock Market Course</h3>
-                        <p class="course-desc">Build wealth through informed investing. Understand Indian markets,
-                            fundamental analysis, and portfolio management.</p>
-                        <ul class="course-features">
-                            <li><i class="fas fa-circle"></i> Indian market structure</li>
-                            <li><i class="fas fa-circle"></i> Fundamental analysis</li>
-                            <li><i class="fas fa-circle"></i> Technical chart patterns</li>
-                            <li><i class="fas fa-circle"></i> Investment psychology</li>
-                        </ul>
-                        <a href="#" class="link-arrow">Learn More <i class="fas fa-arrow-right"></i></a>
+                    <div class="course-card" data-animate="fade-up" style="transition-delay: 0.1s;">
+                        <div class="card-content">
+                            <h3>Stock Market Course</h3>
+                            <p class="course-desc">Build wealth through informed investing. Understand Indian markets,
+                                fundamental analysis, and portfolio management.</p>
+                            <ul class="course-features">
+                                <li><i class="fas fa-check-circle"></i> Indian market structure</li>
+                                <li><i class="fas fa-check-circle"></i> Fundamental analysis</li>
+                                <li><i class="fas fa-check-circle"></i> Technical chart patterns</li>
+                                <li><i class="fas fa-check-circle"></i> Investment psychology</li>
+                            </ul>
+                        </div>
+                        <a href="#contact" class="link-arrow">Learn More <i class="fas fa-arrow-right"></i></a>
                     </div>
 
                     <!-- Course 3 -->
-                    <div class="course-card">
-                        <h3>Options Trading Course</h3>
-                        <p class="course-desc">Unlock advanced strategies with options. Learn Greeks, strike selection,
-                            and professional trading techniques.</p>
-                        <ul class="course-features">
-                            <li><i class="fas fa-circle"></i> Options concepts & Greeks</li>
-                            <li><i class="fas fa-circle"></i> Buyer vs seller strategies</li>
-                            <li><i class="fas fa-circle"></i> Risk-reward analysis</li>
-                            <li><i class="fas fa-circle"></i> Psychology of derivatives</li>
-                        </ul>
-                        <a href="#" class="link-arrow">Learn More <i class="fas fa-arrow-right"></i></a>
+                    <div class="course-card" data-animate="fade-up" style="transition-delay: 0.2s;">
+                        <div class="card-content">
+                            <h3>Options Trading Course</h3>
+                            <p class="course-desc">Unlock advanced strategies with options. Learn Greeks, strike
+                                selection,
+                                and professional trading techniques.</p>
+                            <ul class="course-features">
+                                <li><i class="fas fa-check-circle"></i> Options concepts & Greeks</li>
+                                <li><i class="fas fa-check-circle"></i> Buyer vs seller strategies</li>
+                                <li><i class="fas fa-check-circle"></i> Risk-reward analysis</li>
+                                <li><i class="fas fa-check-circle"></i> Psychology of derivatives</li>
+                            </ul>
+                        </div>
+                        <a href="#contact" class="link-arrow">Learn More <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
 
-                <div class="center mt-50">
-                    <button class="btn-outline">View All Courses</button>
+                <div class="center mt-50" data-animate="fade-up">
+                    <a href="#contact" class="btn-outline">View All Courses</a>
                 </div>
             </div>
         </section>
 
         <!-- NISM Section -->
-        <section class="section-padding bg-darker">
+        <section id="about" class="section-padding bg-darker">
             <div class="container">
-                <div class="section-header center">
+                <div class="section-header center" data-animate="fade-up">
                     <div class="icon-box-gold"><i class="fas fa-certificate"></i></div>
                     <h2 class="mt-20">NISM <span class="text-gold">Certification Training</span></h2>
                     <p>Get certified by SEBI-recognized NISM programs. Professional credentials to boost your career in
                         finance.</p>
                 </div>
 
-                <div class="grid-2-wide">
+                <div class="grid-2-wide" data-animate="fade-up">
                     <div class="nism-item"><i class="fas fa-check-circle"></i> Investment Adviser (Level 1)</div>
                     <div class="nism-item"><i class="fas fa-check-circle"></i> Equity Derivatives</div>
                     <div class="nism-item"><i class="fas fa-check-circle"></i> Currency Derivatives</div>
@@ -182,23 +217,23 @@
                     <div class="nism-item"><i class="fas fa-check-circle"></i> Portfolio Management Services</div>
                 </div>
 
-                <div class="center mt-40">
-                    <button class="btn-primary">Enquire About NISM <i class="fas fa-arrow-right"></i></button>
+                <div class="center mt-40" data-animate="fade-up">
+                    <a href="#contact" class="btn-primary">Enquire About NISM <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </section>
 
         <!-- Why Choose Us -->
-        <section class="section-padding bg-dark">
+        <section id="approach" class="section-padding bg-dark">
             <div class="container">
-                <div class="section-header center">
+                <div class="section-header center" data-animate="fade-up">
                     <span class="pill-label">Why Choose Us</span>
                     <h2>Education That <span class="text-gold">Actually Works</span></h2>
                     <p>We believe in honest, realistic trading education. No get-rich-quick promises — just solid
                         foundations for long-term success.</p>
                 </div>
 
-                <div class="grid-3">
+                <div class="grid-3" data-stagger-load>
                     <div class="feature-card">
                         <div class="icon-box-small"><i class="fas fa-bullseye"></i></div>
                         <h3>Process Over Profit</h3>
@@ -242,7 +277,7 @@
         <!-- Testimonials -->
         <section class="section-padding bg-darker">
             <div class="container">
-                <div class="section-header center">
+                <div class="section-header center" data-animate="fade-up">
                     <span class="pill-label">Student Success</span>
                     <h2>What Our <span class="text-gold">Students Say</span></h2>
                     <p>Real feedback from traders who transformed their approach with our structured education</p>
@@ -250,7 +285,7 @@
 
                 <div class="grid-3">
                     <!-- Testimonial 1 -->
-                    <div class="review-card">
+                    <div class="review-card" data-animate="fade-up">
                         <div class="stars">★★★★★</div>
                         <i class="fas fa-quote-right quote-icon"></i>
                         <p class="review-text">"I initially came to MAASAATHUVAAN for a trading counselling session, but
@@ -266,7 +301,7 @@
                     </div>
 
                     <!-- Testimonial 2 -->
-                    <div class="review-card">
+                    <div class="review-card" data-animate="fade-up" style="transition-delay: 0.1s;">
                         <div class="stars">★★★★★</div>
                         <i class="fas fa-quote-right quote-icon"></i>
                         <p class="review-text">"I joined Maasaathuvaan without any prior knowledge of Forex, and the
@@ -282,7 +317,7 @@
                     </div>
 
                     <!-- Testimonial 3 -->
-                    <div class="review-card">
+                    <div class="review-card" data-animate="fade-up" style="transition-delay: 0.2s;">
                         <div class="stars">★★★★★</div>
                         <i class="fas fa-quote-right quote-icon"></i>
                         <p class="review-text">"I have joined and completed all the 15 sessions, I am very happy to
@@ -301,17 +336,18 @@
         </section>
 
         <!-- Final CTA -->
-        <section class="section-padding bg-dark">
+        <section id="contact" class="section-padding bg-dark">
             <div class="container">
-                <div class="cta-card">
+                <div class="cta-card" data-animate="zoom-in">
                     <span class="pill-label">Start Your Journey</span>
                     <h2>Ready to Transform Your <br><span class="text-gold">Trading Career?</span></h2>
                     <p>Book a free orientation session to understand our approach, ask questions, and see if our
                         programs are right for you.</p>
                     <div class="cta-actions">
-                        <button class="btn-primary-large">Book Free Orientation <i
-                                class="fas fa-arrow-right"></i></button>
-                        <button class="btn-secondary-large"><i class="fas fa-phone-alt"></i> Call Now</button>
+                        <a href="https://wa.me/917845976767" class="btn-primary-large">Book Free Orientation <i
+                                class="fas fa-arrow-right"></i></a>
+                        <a href="tel:+917845976767" class="btn-secondary-large"><i class="fas fa-phone-alt"></i> Call
+                            Now</a>
                     </div>
                     <p class="cta-note">No commitments. No pressure. Just an honest conversation about your trading
                         goals.</p>
@@ -331,11 +367,11 @@
                     believe in process over profit promises, discipline over hype, and building real skills for
                     sustainable financial market participation through ethical education.</p>
                 <div class="social-links">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
                 </div>
             </div>
 
@@ -343,11 +379,10 @@
             <div class="footer-col">
                 <h4>Quick Links</h4>
                 <ul class="footer-links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Our Founder</a></li>
-                    <li><a href="#">Our Approach</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#approach">Our Approach</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
 
@@ -355,19 +390,17 @@
             <div class="footer-col">
                 <h4>Our Courses</h4>
                 <ul class="footer-links">
-                    <li><a href="#">Forex Trading Course</a></li>
-                    <li><a href="#">Stock Market Course</a></li>
-                    <li><a href="#">Options Trading Course</a></li>
+                    <li><a href="#courses">Forex Trading Course</a></li>
+                    <li><a href="#courses">Stock Market Course</a></li>
+                    <li><a href="#courses">Options Trading Course</a></li>
                 </ul>
 
-                <h4 class="mt-20 text-gold-sm">NISM CERTIFICATION TRAINING PROGRAMS</h4>
+                <h4 class="mt-20 text-gold-sm">NISM CERTIFICATION</h4>
                 <ul class="footer-links nism-links">
-                    <li>NISM Series X-B – Investment Adviser (Level 2)</li>
-                    <li>NISM Series XV – Research Analyst Certification</li>
-                    <li>NISM Series I – Currency Derivatives Certification</li>
+                    <li>Investment Adviser (Level 1 & 2)</li>
+                    <li>Research Analyst Certification</li>
+                    <li>Currency Derivatives Certification</li>
                 </ul>
-                <p class="footer-small">Industry-oriented certification training aligned with SEBI & NISM standards...
-                </p>
             </div>
 
             <!-- Contact -->
