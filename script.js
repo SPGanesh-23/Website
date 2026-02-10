@@ -1,47 +1,28 @@
+// Maasaathuvaan Clone Interactivity
+
 document.addEventListener('DOMContentLoaded', () => {
-    const navbar = document.querySelector('header');
-    const menuToggle = document.querySelector('.menu-toggle');
-    const nav = document.querySelector('nav');
-
-    // Scroll Effect
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
-        }
-    });
-
-    // Mobile Menu Toggle
-    if (menuToggle) {
-        menuToggle.addEventListener('click', () => {
-            nav.classList.toggle('active');
+    // 1. Mobile Menu Toggle
+    const mobileToggle = document.querySelector('.mobile-toggle');
+    // Note: In a real implementation, we'd toggle a visible class on a mobile nav menu
+    // For this prototype, we'll log it
+    if (mobileToggle) {
+        mobileToggle.addEventListener('click', () => {
+            alert('Mobile menu clicked - (Nav toggle implementation would go here)');
         });
     }
 
-    // Smooth Scroll for Anchor Links
+    // 2. Smooth Scroll for Anchor Links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
         });
     });
 
-    // Add Intersection Observer for reveal animations (if we add more sections later)
-    const observerOptions = {
-        threshold: 0.1
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-            }
-        });
-    }, observerOptions);
-
-    // Observe elements with .fade-in class
-    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    console.log("Maasaathuvaan Clone Loaded Successfully");
 });
