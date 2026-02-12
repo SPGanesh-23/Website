@@ -143,6 +143,16 @@ p {
     text-shadow: var(--glow-text);
 }
 
+.branch-title {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 12px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    display: block;
+}
+
 /* UTILITIES */
 .container {
     max-width: var(--container-width);
