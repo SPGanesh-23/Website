@@ -1,0 +1,357 @@
+/* CONTACT PAGE STYLES */
+
+/* Disclaimer Section */
+.disclaimer-section {
+    background: #0a0e1a;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--border-subtle);
+}
+
+.disclaimer-text {
+    font-size: 0.85rem;
+    color: #94a3b8;
+    line-height: 1.6;
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.disclaimer-text strong {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+/* CTA Section */
+.cta-section {
+    padding: 80px 0;
+    background: linear-gradient(180deg, #010205 0%, #0a0e1a 100%);
+}
+
+.cta-card {
+    text-align: center;
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+    border: 1px solid rgba(255, 184, 0, 0.2);
+    border-radius: 24px;
+    padding: 60px 40px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.cta-card h1 {
+    font-size: 2.5rem;
+    margin-bottom: 16px;
+    color: white;
+}
+
+.cta-subtitle {
+    font-size: 1.15rem;
+    color: #94a3b8;
+    margin-bottom: 40px;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn-gold-large {
+    background: linear-gradient(135deg, #ffb800 0%, #ff9500 100%);
+    color: #000;
+    padding: 18px 36px;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.btn-gold-large:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(255, 184, 0, 0.5);
+}
+
+.btn-outline-white {
+    background: transparent;
+    color: white;
+    padding: 18px 36px;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.btn-outline-white:hover {
+    border-color: white;
+    background: rgba(255, 255, 255, 0.05);
+    transform: translateY(-2px);
+}
+
+/* Contact Information Section */
+.contact-info-section {
+    padding: 100px 0;
+    background: #010205;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Left Column - Contact Details */
+.contact-details h2 {
+    font-size: 2rem;
+    margin-bottom: 16px;
+    color: white;
+}
+
+.contact-intro {
+    color: #94a3b8;
+    line-height: 1.7;
+    margin-bottom: 40px;
+}
+
+.contact-items {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.contact-item {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.contact-icon {
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 184, 0, 0.1);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.contact-icon i {
+    font-size: 1.3rem;
+    color: var(--primary);
+}
+
+.contact-content h4 {
+    font-size: 1rem;
+    color: var(--primary);
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.contact-content p {
+    color: #cbd5e1;
+    line-height: 1.6;
+}
+
+.contact-content a {
+    color: #cbd5e1;
+    transition: color 0.3s ease;
+}
+
+.contact-content a:hover {
+    color: var(--primary);
+}
+
+.btn-whatsapp-large {
+    background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+    color: white;
+    padding: 16px 32px;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 1.05rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    transition: all 0.3s ease;
+    width: 100%;
+    justify-content: center;
+}
+
+.btn-whatsapp-large:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
+}
+
+.btn-whatsapp-large i {
+    font-size: 1.4rem;
+}
+
+/* Right Column - Booking Info */
+.booking-info {
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+    border: 1px solid var(--border-subtle);
+    border-radius: 20px;
+    padding: 40px;
+}
+
+.badge {
+    display: inline-block;
+    background: rgba(255, 184, 0, 0.1);
+    color: var(--primary);
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.booking-info h2 {
+    font-size: 1.8rem;
+    margin-bottom: 16px;
+    color: white;
+}
+
+.booking-desc {
+    color: #94a3b8;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.booking-benefits {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 32px;
+}
+
+.booking-benefits li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 10px 0;
+    color: #cbd5e1;
+    line-height: 1.6;
+}
+
+.booking-benefits i {
+    color: var(--primary);
+    margin-top: 4px;
+    flex-shrink: 0;
+}
+
+.booking-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.btn-booking {
+    background: linear-gradient(135deg, #ffb800 0%, #ff9500 100%);
+    color: #000;
+    padding: 16px 28px;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.btn-booking:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(255, 184, 0, 0.4);
+}
+
+.btn-whatsapp-outline {
+    background: transparent;
+    color: #25D366;
+    padding: 16px 28px;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+    border: 2px solid rgba(37, 211, 102, 0.3);
+    width: 100%;
+}
+
+.btn-whatsapp-outline:hover {
+    border-color: #25D366;
+    background: rgba(37, 211, 102, 0.05);
+    transform: translateY(-2px);
+}
+
+.privacy-note {
+    font-size: 0.8rem;
+    color: #64748b;
+    text-align: center;
+    line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .cta-card h1 {
+        font-size: 2rem;
+    }
+
+    .cta-card {
+        padding: 40px 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .disclaimer-text {
+        font-size: 0.8rem;
+    }
+
+    .cta-card h1 {
+        font-size: 1.6rem;
+    }
+
+    .cta-subtitle {
+        font-size: 1rem;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+    }
+
+    .btn-gold-large,
+    .btn-outline-white {
+        width: 100%;
+    }
+
+    .contact-details h2,
+    .booking-info h2 {
+        font-size: 1.5rem;
+    }
+
+    .booking-info {
+        padding: 30px 20px;
+    }
+
+    .contact-info-section {
+        padding: 60px 0;
+    }
+}
